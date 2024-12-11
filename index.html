@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipality of Lala, Lanao del Norte</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Lato", sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            animation: backgroundColorChange 10s infinite alternate;
+        }
+
+        @keyframes backgroundColorChange {
+            0% { background-color: #54a0ff; }
+            25% { background-color: #ff6b81; }
+            50% { background-color: #ffb142; }
+            75% { background-color: #1dd1a1; }
+            100% { background-color: #ffb142; }
+        }
+
+        .sidepanel {
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidepanel a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidepanel a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidepanel .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            color: #818181;
+        }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+
+        .openbtn:hover {
+            background-color: #444;
+        }
+
+        header {
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        img {
+            max-width: 100%; /* Responsive image */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="history.html">History</a>
+        <a href="alimango.html">Alimango Festival</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+    
+    <button class="openbtn" onclick="openNav()">☰ Info</button>  
+    <h2>Welcome to Lala, Lanao del Norte</h2>
+    
+    <script>
+    function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+    }
+    
+    function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+    }
+    </script>
+    <img src="logo(1).png" alt="logo of the municipality" width="300" height="300">
+    <h1>The Home of Alimango Festival</h1>
+</header>
+
+<div class="container">
+    <h2>About Lala</h2>
+    <p>The municipality of Lala was originally a thick tropical forest. Its early inhabitants were mostly Maranaos, who settled along the shores of Panguil Bay. The origin of the name “Lala” has two versions. In the Muslim version, “Lala” means a great plain, which fittingly describes the topography and terrain of the place. In the Christian version, the term “Lala” means deadly. The early Christian settlers attributed this characterization because they considered the place to be hostile and forbidding. Like any swampy and forested area, the dreadful malaria disease exacted a heavy toll on the lives of the settlers.</p>
+
+    <p>Attracted by the fertile plains, the Christians, who were mostly traders, grouped themselves into small settlements along estuaries. The Christian settlements were gradually integrated into the Muslim communities. Settlements started to grow and expanded to the hinterlands.</p>
+    
+    <h2>Geography</h2>
+    <p>The municipality of Lala is situated in the northern part of Mindanao, bordered by various bodies of water and mountain ranges. It is characterized by its mountainous terrain, lush green landscapes, and fertile valleys. The town is approximately 70 kilometers east of the city of Iligan, and it is intersected by several rivers that contribute to the region's agriculture.</p>
+    
+    <p>Lala is accessible via several roads connecting it to other municipalities and cities, making it a strategic location for trade and commerce. The area enjoys a tropical climate, with distinct wet and dry seasons, which supports diverse agricultural activities. The municipality is rich in natural resources, with significant areas dedicated to agriculture, forestry, and other eco-tourism activities.</p>
+
+    <h2>Vision</h2>
+    <p>The Municipality of Lala is envisioned to be a livable and productive place where people are healthy, living in a safe, clean environment with national security, a competitive economy, and transparent, accountable, participatory governance.</p>
+
+    <h2>Mission</h2>
+    <p>The municipality government shall promote local autonomy, ensure public safety, and strengthen capabilities to achieve its goals and objectives by providing basic services to its people.</p>
+</div>
+
+<footer>
+    <p>&copy; 2023 Municipality of Lala, Lanao del Norte. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
